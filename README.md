@@ -1,4 +1,6 @@
-# PixelImageAssng
+#Tried making it but still some logical parts remains here for which needed time
+
+# Photo Picker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
