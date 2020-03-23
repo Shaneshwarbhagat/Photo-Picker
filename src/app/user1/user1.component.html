@@ -1,0 +1,43 @@
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="container user1">
+        
+          <div class="row main-continer">
+              <div class="col-sm-12 col-md-3 detail">
+                  <img src="../assets/user1.png" alt="user 1" class="img-rounded img-responsive user1-image" />
+
+                  <h4>{{album.name}}</h4>
+                  <small><cite title="Kasarwadi">{{album.locality}} <i class="glyphicon glyphicon-map-marker">
+                  </i></cite></small>
+                  <p>
+                    <i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;<a href="mailto:{{album.email}}">{{album.email}}</a>
+                    <br />
+                    <i class="glyphicon glyphicon-globe"></i>&nbsp; {{album.address}}
+                  </p>  
+              </div>
+
+              <div class="col-sm-12 col-md-9">
+                <!-- <form [formGroup]="form" (ngSubmit)="showcase(form)"> -->
+                <div *ngFor='let albums of album.albm' class="col-md-6 col-sm-12 col-xs-12">
+                  <input type="checkbox" id="{{albums.lablFor}}" name='{{albums.albmName}}' value='{{albums.albmName}}' #CheckBoxName /><label for="{{albums.lablFor}}">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="{{albums.albmImage}}" alt="http://placehold.it/350x250">
+                          <div class="overlay">
+                              <h2>{{albums.heading}}</h2>
+                              <p>{{albums.albmName}}</p>
+                          </div>
+                  </div></label>
+                </div>
+
+                <div class='cstm_btn'>
+                  <button type="submit" routerLink='/Gallery' class="btn-grad">Show Photos</button>
+                </div>
+              <!-- </form> -->
+              </div>  
+              
+          </div> <!-- main container -->
+
+    </div>     
+  </div>
+</div>

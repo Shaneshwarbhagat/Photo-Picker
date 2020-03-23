@@ -1,0 +1,30 @@
+<div class="container wrapDiv">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}..!
+    </h1>
+
+    <img width="300" alt="Photo Keeper" src="../assets/Logo.png">
+
+    <p>{{slogan}}</p>
+
+    <marquee width="60%" direction="right" height="30px">
+      <i>{{description}}</i>
+     </marquee>
+
+     <h5><strong>Select the user to get their albums</strong></h5>
+     
+     <div class='select-user'> 
+      <ul> 
+          <li class="li_1"> 
+            <a href="">Users &nbsp;<i class='fa fa-user'></i></a> 
+            <ul> 
+              <li><a routerLink="/User1" >User 1</a></li> 
+              <li><a routerLink="/User2">User 2</a></li>
+            </ul> 
+          </li> 
+      </ul> 
+    </div> 
+
+  </div>
+</div>

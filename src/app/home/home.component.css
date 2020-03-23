@@ -1,0 +1,65 @@
+.wrapDiv{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapDiv p{
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+/* Drop down list css start */
+.select-user >ul{ 
+    margin: 0 auto; 
+    width: 100px; 
+} 
+.select-user ul li{ 
+    display: block; 
+    float: left;
+    background: #154025;
+    margin-left:-40px; 
+    position: relative; 
+} 
+.select-user ul a{ 
+    color: #fff; 
+    display: block; 
+    float: left; 
+    width: 100px; 
+    padding: 10px 20px; 
+} 
+.select-user ul a:hover{ 
+    background: #154025; 
+    color: #fff;
+} 
+.select-user ul li ul li{ 
+    float: none; 
+} 
+.select-user ul li ul{ 
+    display: none; 
+    position: absolute; 
+    background: #FF1E00; 
+    color: #fff; 
+    top: 42px; 
+} 
+.select-user ul li:hover>ul{ 
+    display: block; 
+} 
+.select-user ul li a{ 
+    display: block; 
+} 
+/* end list */
+
+/* ipad */
+@media (min-width: 768px){
+    .wrapDiv {
+        width: 750px;
+    }
+}
+/* Desktop */
+@media (min-width: 1200px){
+    .wrapDiv {
+        width: 1170px;
+    }
+}

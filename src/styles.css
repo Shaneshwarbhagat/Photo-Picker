@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif !important;
+    background: url('assets/bg.png');
+}
+
+h1,h2,h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #154025;
+    color: #fff;
+    border-bottom: 2px solid #40b96d;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 17px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    user-select: none;
+    text-transform: none;
+    overflow: visible;
+}
+button:hover {
+    color: #fff;
+    background-color: #FF1E00;
+    border-color: #ac2925;
+}
